@@ -43,11 +43,224 @@
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button">Sign in</button>
-                            <button class="dropdown-item" type="button">Sign up</button>
+                            <button class="dropdown-item" type="button" data-toggle="modal" data-target="#exampleModal">Sign in</button>
+                            <button class="dropdown-item" type="button" data-toggle="modal" data-target="#exampleModal1">Sign up</button>
                         </div>
                     </div>
-                    <!-- <div class="btn-group mx-2">
+
+                    <!-- login page -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                                </div>
+                                <div class="modal-body ">
+
+                                    <!-- Pills navs -->
+
+                                    <!-- Pills navs -->
+
+                                    <!-- Pills content -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                                            <form>
+                                                <div class="text-center mb-3">
+                                                    <p>Sign in with:</p>
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                                <i class="fab fa-facebook-f"></i>
+                                                            </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                                        <i class="fab fa-google"></i>
+                                                                    </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                                        <i class="fab fa-github"></i>
+                                                                    </button>
+                                                </div>
+
+                                                <p class="text-center">or:</p>
+
+                                                <!-- Email input -->
+                                                <div class="form-outline mb-2 text-center   ">
+                                                    <input type="email" id="loginName" class="form-control" placeholder="username" />
+                                                    <label class="form-label login-input" for="loginName"></label>
+                                                </div>
+
+                                                <!-- Password input -->
+                                                <div class="form-outline mb-2 text-center">
+                                                    <input type="password" id="loginPassword" class="form-control" placeholder="password" />
+                                                    <label class="form-label" for="loginPassword"></label>
+                                                </div>
+
+                                                <!-- 2 column grid layout -->
+                                                <div class="row mb-4">
+                                                    <div class="col-md-6 d-flex justify-content-center">
+                                                        <!-- Checkbox -->
+                                                        <div class="form-check mb-3 mb-md-0">
+                                                            <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                                            <label class="form-check-label" for="loginCheck"> Remember me </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 d-flex justify-content-center">
+                                                        <!-- Simple link -->
+                                                        <a href="#!">Forgot password?</a>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Submit button -->
+                                                <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+                                                <!-- Register buttons -->
+                                                <div class="text-center">
+                                                    <p>Not a member? <a href="#!">Register</a></p>
+                                                </div>
+                                            </form>
+                                        </div>
+
+
+                                        <!-- Submit button -->
+                                        <!-- <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button> -->
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- Pills content -->
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- register page -->
+
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                                </div>
+                                <div class="modal-body ">
+
+                                    <!-- Pills navs -->
+
+                                    <!-- Pills navs -->
+
+                                    <!-- Pills content -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                                            <form>
+                                                <div class="text-center mb-3">
+                                                    <p>Sign up with:</p>
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                                <i class="fab fa-facebook-f"></i>
+                                                            </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                                        <i class="fab fa-google"></i>
+                                                                    </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                                        <i class="fab fa-github"></i>
+                                                                    </button>
+                                                </div>
+
+                                                <p class="text-center">or:</p>
+
+                                                <!-- Email input -->
+                                                <div class="form-outline mb-1 text-center   ">
+                                                    <input type="name" id="loginName" class="form-control" placeholder="Name" />
+                                                    <label class="form-label login-input" for="loginName"></label>
+                                                </div>
+                                                <div class="form-outline mb-1 text-center   ">
+                                                    <input type="name" id="loginName" class="form-control" placeholder="Username" />
+                                                    <label class="form-label login-input" for="loginName"></label>
+                                                </div>
+
+                                                <div class="form-outline mb-1 text-center   ">
+                                                    <input type="email" id="loginName" class="form-control" placeholder="example@example.com" />
+                                                    <label class="form-label login-input" for="loginName"></label>
+                                                </div>
+
+
+
+                                                <!-- Password input -->
+                                                <div class="form-outline mb-1 text-center">
+                                                    <input type="password" id="loginPassword" class="form-control" placeholder="Password" />
+                                                    <label class="form-label" for="loginPassword"></label>
+                                                </div>
+                                                <div class="form-outline mb-1 text-center">
+                                                    <input type="password" id="loginPassword" class="form-control" placeholder="Repeat Password" />
+                                                    <label class="form-label" for="loginPassword"></label>
+                                                </div>
+
+                                                <!-- 2 column grid layout -->
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12 d-flex justify-content-center">
+                                                        <!-- Checkbox -->
+                                                        <div class="form-check mb-3 mb-md-0">
+                                                            <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                                            <label class="form-check-label" for="loginCheck"> I have read and agree to the terms </label>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <!-- Submit button -->
+                                                <button type="submit" class="btn btn-primary btn-block mb-4">Sign Up</button>
+
+                                                <!-- Register buttons -->
+
+                                            </form>
+                                        </div>
+
+
+                                        <!-- Submit button -->
+                                        <!-- <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button> -->
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- Pills content -->
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- register panel -->
+
+
+
+
+                <!-- register panel end -->
+
+
+                <!-- Vertically centered scrollable modal -->
+
+                <!-- <div class="btn-group mx-2">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">USD</button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <button class="dropdown-item" type="button">EUR</button>
@@ -63,43 +276,43 @@
                             <button class="dropdown-item" type="button">RU</button>
                         </div>
                     </div> -->
-                </div>
-                <div class="d-inline-flex align-items-center d-block d-lg-none">
-                    <a href="" class="btn px-0 ml-2">
-                        <i class="fas fa-heart text-dark"></i>
-                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
-                    </a>
-                    <a href="" class="btn px-0 ml-2">
-                        <i class="fas fa-shopping-cart text-dark"></i>
-                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
-                    </a>
-                </div>
             </div>
-        </div>
-        <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
-            <div class="col-lg-4">
-                <a href="" class="text-decoration-none">
-                    <span class="h1 text-uppercase text-primary bg-dark px-2">Marked</span>
-                    <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Shop</span>
+            <div class="d-inline-flex align-items-center d-block d-lg-none">
+                <a href="" class="btn px-0 ml-2">
+                    <i class="fas fa-heart text-dark"></i>
+                    <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                </a>
+                <a href="" class="btn px-0 ml-2">
+                    <i class="fas fa-shopping-cart text-dark"></i>
+                    <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
                 </a>
             </div>
-            <div class="col-lg-4 col-6 text-left">
-                <form action="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
-                        <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
+        </div>
+    </div>
+    <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+        <div class="col-lg-4">
+            <a href="" class="text-decoration-none">
+                <span class="h1 text-uppercase text-primary bg-dark px-2">Marked</span>
+                <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Shop</span>
+            </a>
+        </div>
+        <div class="col-lg-4 col-6 text-left">
+            <form action="">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for products">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-transparent text-primary">
                                 <i class="fa fa-search"></i>
                             </span>
-                        </div>
                     </div>
-                </form>
-            </div>
-            <div class="col-lg-4 col-6 text-right">
-                <p class="m-0">Customer Service</p>
-                <h5 class="m-0">+639 95355 8025</h5>
-            </div>
+                </div>
+            </form>
         </div>
+        <div class="col-lg-4 col-6 text-right">
+            <p class="m-0">Customer Service</p>
+            <h5 class="m-0">+639 95355 8025</h5>
+        </div>
+    </div>
     </div>
     <!-- Topbar End -->
 
